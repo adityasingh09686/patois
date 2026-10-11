@@ -11,7 +11,7 @@ Topics: Education, Languages, Productivity
 Pricing: Free.
 
 Links
-Web: https://lexly.heyitsmejosh.com
+Web: https://lexly.jaybulb.com
 App Store: https://apps.apple.com/app/id6783501611
 GitHub: https://github.com/nulljosh/tonchi
 
