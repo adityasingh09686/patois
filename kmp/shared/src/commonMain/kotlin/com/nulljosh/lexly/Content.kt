@@ -58,7 +58,7 @@ data class Course(
 // exactly what iOS/macOS already do: no login wall in front of lesson
 // content. Sign-in (not built here) buys cross-device progress sync only --
 // see CLAUDE.md's "Auth differs by platform, on purpose".
-class LexlyClient(private val baseUrl: String = "https://lexly.heyitsmejosh.com") {
+class LexlyClient(private val baseUrl: String = "https://lexly.jaybulb.com") {
     private val http = HttpClient {
         install(ContentNegotiation) { json(Json { ignoreUnknownKeys = true }) }
     }
