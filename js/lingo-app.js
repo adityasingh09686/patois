@@ -97,7 +97,7 @@ function clearAuthCookie() {
 
 // The client loads from our own /js/spark-client.js, but keep the degrade path: if it is missing,
 // `sb` is null and auth is unavailable instead of the whole app dying at module scope.
-const sb = window.spark ? window.spark.createClient('https://api.heyitsmejosh.com') : null;
+const sb = window.spark ? window.spark.createClient('https://api.jaybulb.com') : null;
 
 // A reset link lands here with ?recovery_token=...; the client announces it and we ask for the new password.
 function showRecoveryForm() {

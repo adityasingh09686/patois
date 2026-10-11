@@ -28,7 +28,7 @@ for di, (dom, fs) in enumerate(sorted(by_dom.items()), 1):
         lessons.append({'id': f'u{di}l{li}', 'title': f['n'], 'exercises': ex})
     slug = ''.join(ch if ch.isalnum() else '-' for ch in dom.lower()).strip('-')
     while '--' in slug: slug = slug.replace('--', '-')
-    units.append({'id': f'u{di}', 'title': dom, 'tip': f'Read the {dom} entries first at fieldbook.heyitsmejosh.com/#{slug}, then come back and test yourself.', 'lessons': lessons})
+    units.append({'id': f'u{di}', 'title': dom, 'tip': f'Read the {dom} entries first at fieldbook.jaybulb.com/#{slug}, then come back and test yourself.', 'lessons': lessons})
 out = {'id': 'fieldbook', 'name': 'Fieldbook', 'category': 'science', 'icon': 'fa-solid fa-compass',
        'level': 'Every field of science and math', 'version': 1, 'units': units}
 json.dump(out, open(root / 'tonchi/content/courses/fieldbook.json', 'w'), indent=1)

@@ -9,7 +9,7 @@
   {
    "id": "u1",
    "title": "Anatomy & Physiology",
-   "tip": "Read the Anatomy & Physiology entries first at fieldbook.heyitsmejosh.com/#anatomy-physiology, then come back and test yourself.",
+   "tip": "Read the Anatomy & Physiology entries first at fieldbook.jaybulb.com/#anatomy-physiology, then come back and test yourself.",
    "lessons": [
     {
      "id": "u1l1",
@@ -952,7 +952,7 @@
   {
    "id": "u2",
    "title": "Applied",
-   "tip": "Read the Applied entries first at fieldbook.heyitsmejosh.com/#applied, then come back and test yourself.",
+   "tip": "Read the Applied entries first at fieldbook.jaybulb.com/#applied, then come back and test yourself.",
    "lessons": [
     {
      "id": "u2l1",
@@ -1661,7 +1661,7 @@
   {
    "id": "u3",
    "title": "Biology",
-   "tip": "Read the Biology entries first at fieldbook.heyitsmejosh.com/#biology, then come back and test yourself.",
+   "tip": "Read the Biology entries first at fieldbook.jaybulb.com/#biology, then come back and test yourself.",
    "lessons": [
     {
      "id": "u3l1",
@@ -2682,7 +2682,7 @@
   {
    "id": "u4",
    "title": "Chemistry",
-   "tip": "Read the Chemistry entries first at fieldbook.heyitsmejosh.com/#chemistry, then come back and test yourself.",
+   "tip": "Read the Chemistry entries first at fieldbook.jaybulb.com/#chemistry, then come back and test yourself.",
    "lessons": [
     {
      "id": "u4l1",
@@ -3235,7 +3235,7 @@
   {
    "id": "u5",
    "title": "Computing",
-   "tip": "Read the Computing entries first at fieldbook.heyitsmejosh.com/#computing, then come back and test yourself.",
+   "tip": "Read the Computing entries first at fieldbook.jaybulb.com/#computing, then come back and test yourself.",
    "lessons": [
     {
      "id": "u5l1",
@@ -3866,7 +3866,7 @@
   {
    "id": "u6",
    "title": "Earth & Space",
-   "tip": "Read the Earth & Space entries first at fieldbook.heyitsmejosh.com/#earth-space, then come back and test yourself.",
+   "tip": "Read the Earth & Space entries first at fieldbook.jaybulb.com/#earth-space, then come back and test yourself.",
    "lessons": [
     {
      "id": "u6l1",
@@ -4341,7 +4341,7 @@
   {
    "id": "u7",
    "title": "Mathematics",
-   "tip": "Read the Mathematics entries first at fieldbook.heyitsmejosh.com/#mathematics, then come back and test yourself.",
+   "tip": "Read the Mathematics entries first at fieldbook.jaybulb.com/#mathematics, then come back and test yourself.",
    "lessons": [
     {
      "id": "u7l1",
@@ -5362,7 +5362,7 @@
   {
    "id": "u8",
    "title": "Mind & Society",
-   "tip": "Read the Mind & Society entries first at fieldbook.heyitsmejosh.com/#mind-society, then come back and test yourself.",
+   "tip": "Read the Mind & Society entries first at fieldbook.jaybulb.com/#mind-society, then come back and test yourself.",
    "lessons": [
     {
      "id": "u8l1",
@@ -6305,7 +6305,7 @@
   {
    "id": "u9",
    "title": "Physics",
-   "tip": "Read the Physics entries first at fieldbook.heyitsmejosh.com/#physics, then come back and test yourself.",
+   "tip": "Read the Physics entries first at fieldbook.jaybulb.com/#physics, then come back and test yourself.",
    "lessons": [
     {
      "id": "u9l1",
