@@ -623,3 +623,9 @@ The earlier gaps have been addressed:
 - Hero screenshots showing pre-auth-gate catalog: no longer an issue since the demo lesson at /app/?demo=1 shows what visitors actually encounter
 - No screenshot of an actual lesson: the demo lesson provides a playable example of all five exercise types
 - No social proof: unavailable to honestly show (0 App Store reviews, 0 GitHub stars), but the demo lets visitors experience the product themselves rather than seeing fake testimonials
+
+## Ingested 2026-10-16
+- [ ] Very neglected app. Stale name and screenshots on the App Store: live listing is still Lexly 1.1.3 with old screenshots. (screenshots: notes/attachments/2026-10-16/lexly-1.png, notes/attachments/2026-10-16/tonchi-2.png)
+- [ ] Needs iPad testing. iOS 1.1.6 was rejected 2.1.0 App Completeness; the reviewer's iPad screenshot shows the sign-in screen with "Nonces mismatch". (screenshots: notes/attachments/2026-10-16/tonchi-3.png, notes/attachments/2026-10-16/tonchi-4.png)
+- [ ] Very neglected app. Stale name and screenshots on the App Store: live listing is still Lexly 1.1.3 with old screenshots. (screenshots: notes/attachments/2026-10-16/lexly-1.png, notes/attachments/2026-10-16/tonchi-2.png)
+- [ ] Needs iPad testing. iOS 1.1.6 was rejected 2.1.0 App Completeness; the reviewer's iPad screenshot shows the sign-in screen with "Nonces mismatch". (screenshots: notes/attachments/2026-10-16/tonchi-3.png, notes/attachments/2026-10-16/tonchi-4.png)
