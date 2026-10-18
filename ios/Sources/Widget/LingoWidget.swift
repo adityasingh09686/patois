@@ -58,7 +58,7 @@ struct LingoWidget: Widget {
         StaticConfiguration(kind: kind, provider: LingoWidgetProvider()) { entry in
             LingoWidgetView(entry: entry)
         }
-        .configurationDisplayName("Tonchi Streak")
+        .configurationDisplayName("Patois Streak")
         .description("See your current streak and XP.")
         .supportedFamilies([.systemSmall])
     }

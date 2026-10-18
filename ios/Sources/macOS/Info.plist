@@ -16,9 +16,9 @@
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleName</key>
-    <string>Tonchi</string>
+    <string>Patois</string>
     <key>CFBundleDisplayName</key>
-    <string>Tonchi</string>
+    <string>Patois</string>
     <key>CFBundleIdentifier</key>
     <string>com.nulljosh.lingo</string>
     <key>CFBundlePackageType</key>

@@ -76,7 +76,7 @@ fun AppScreen(client: LexlyClient = LexlyClient()) {
 
     Surface {
         Column(Modifier.fillMaxSize().padding(24.dp)) {
-            Text("Tonchi", style = MaterialTheme.typography.headlineMedium)
+            Text("Patois", style = MaterialTheme.typography.headlineMedium)
             when {
                 error != null -> Text(error!!)
                 selected == null -> {

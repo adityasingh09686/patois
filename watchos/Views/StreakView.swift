@@ -68,7 +68,7 @@ struct StreakView: View {
             progress = cached
         }
         guard WatchAPI.shared.isPaired else {
-            errorMessage = "Pair with Tonchi on the Settings tab"
+            errorMessage = "Pair with Patois on the Settings tab"
             return
         }
         isLoading = progress == nil
@@ -77,7 +77,7 @@ struct StreakView: View {
             errorMessage = nil
         } catch {
             if progress == nil {
-                errorMessage = "Couldn't reach Tonchi"
+                errorMessage = "Couldn't reach Patois"
             }
         }
         isLoading = false

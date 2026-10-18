@@ -1,6 +1,6 @@
 <img src="assets/icon.svg" width="80" style="border-radius:18px">
 
-# Tonchi
+# Patois
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![App Store](https://img.shields.io/badge/App%20Store-Download-0D96F6?logo=appstore&logoColor=white)](https://apps.apple.com/app/id6783501611)
 
