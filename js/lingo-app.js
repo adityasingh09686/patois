@@ -242,6 +242,20 @@ function findSubjectMeta(subjectId) {
 }
 
 // Lazily fetch and flatten a course pack into the SRS-ready exercise array.
+// Teaching overlay: content/teach/<course>.json adds a unit tip, a lesson intro with worked examples,
+// a recap line per lesson, and a "why" per exercise, without touching the generated course file.
+function applyTeach(pack, overlay) {
+    const lessons = overlay.lessons || {};
+    const why = overlay.explain || {};
+    (pack.units || []).forEach((unit) => {
+        if (overlay.units && overlay.units[unit.id] && overlay.units[unit.id].tip) unit.tip = overlay.units[unit.id].tip;
+        (unit.lessons || []).forEach((lesson) => {
+            if (lessons[lesson.id]) lesson.teach = lessons[lesson.id];
+            (lesson.exercises || []).forEach((ex) => { if (ex.id && why[ex.id] && !ex.explain) ex.explain = why[ex.id]; });
+        });
+    });
+}
+
 async function loadCourse(subjectId) {
     if (questions[subjectId]) return questions[subjectId];
     const meta = findSubjectMeta(subjectId);
@@ -254,6 +268,10 @@ async function loadCourse(subjectId) {
         questions[subjectId] = [];
         return questions[subjectId];
     }
+    try {
+        const taught = await fetch(`/content/teach/${subjectId}.json`);
+        if (taught.ok) applyTeach(pack, await taught.json());
+    } catch (_) { /* no teaching overlay for this course yet */ }
     const flat = [];
     (pack.units || []).forEach((unit) => {
         (unit.lessons || []).forEach((lesson) => {
@@ -891,7 +909,8 @@ function setupEventListeners() {
     });
 
     document.getElementById('treeBackBtn').addEventListener('click', resetToHome);
-    document.getElementById('checkBtn').addEventListener('click', checkAnswer);
+    // checkBtn is driven by its onclick alone (check, then continue). A second listener here ran checkAnswer
+    // and then the swapped-in nextQuestion in the same click, so the feedback never stayed on screen.
     document.getElementById('skipBtn').addEventListener('click', skipQuestion);
     document.getElementById('continueBtn').addEventListener('click', continueLearning);
     document.getElementById('achievementBtn').addEventListener('click', renderAchievementPanel);
@@ -1467,11 +1486,84 @@ function learnRows(lessonQuestions) {
     return rows.filter(([term]) => !seen.has(term) && seen.add(term)).slice(0, 8);
 }
 
+function hearButton(text) {
+    const hear = document.createElement('button');
+    hear.type = 'button';
+    hear.className = 'feedback-hear';
+    hear.setAttribute('aria-label', `Hear ${text}`);
+    hear.append(makeIcon('fa-solid fa-volume-high'));
+    hear.addEventListener('click', () => speak(text, currentLang()));
+    return hear;
+}
+
+// Teach first: what this lesson is about, each new thing with a worked example, then a tip.
+function renderTeach(card, teach, spoken, unitTip) {
+    const add = (tag, className, text) => {
+        const el = document.createElement(tag);
+        el.className = className;
+        el.textContent = text;
+        return el;
+    };
+    if (teach.intro) card.appendChild(add('p', 'teach-intro', teach.intro));
+    (teach.points || []).forEach((pt) => {
+        const item = document.createElement('div');
+        item.className = 'teach-point';
+        const head = document.createElement('div');
+        head.className = 'teach-term';
+        if (spoken && pt.say !== false) head.appendChild(hearButton(pt.term));
+        head.append(add('strong', '', pt.term), add('span', 'teach-meaning', pt.meaning));
+        item.appendChild(head);
+        if (pt.example) {
+            const ex = document.createElement('p');
+            ex.className = 'teach-example';
+            if (spoken) ex.appendChild(hearButton(pt.example));
+            ex.append(pt.example);
+            if (pt.example_en) ex.append(document.createElement('br'), add('span', 'teach-example-en', pt.example_en));
+            item.appendChild(ex);
+        }
+        if (pt.note) item.appendChild(add('p', 'teach-note', pt.note));
+        card.appendChild(item);
+    });
+    const tip = teach.tip || unitTip;
+    if (tip) card.appendChild(add('p', 'teach-tip', tip));
+}
+
+// Recap on the results screen: the lesson's points again, so the last thing you see is what you learned.
+function renderRecap() {
+    const old = document.getElementById('lessonRecap');
+    if (old) old.remove();
+    const pack = PACK_CACHE[gameState.selectedSubject];
+    let teach = null;
+    (pack?.units || []).forEach((u) => (u.lessons || []).forEach((l) => { if (l.id === gameState.selectedLesson) teach = l.teach; }));
+    if (!teach || !(teach.points || []).length) return;
+    const box = document.createElement('div');
+    box.id = 'lessonRecap';
+    box.className = 'lesson-recap';
+    const label = document.createElement('div');
+    label.className = 'unit-intro-label';
+    label.textContent = 'What you learned';
+    const list = document.createElement('ul');
+    teach.points.forEach((pt) => {
+        const li = document.createElement('li');
+        li.textContent = `${pt.term}: ${pt.meaning}`;
+        list.appendChild(li);
+    });
+    box.append(label, list);
+    if (teach.recap) {
+        const p = document.createElement('p');
+        p.textContent = teach.recap;
+        box.appendChild(p);
+    }
+    const stats = document.querySelector('#resultContainer .result-stats');
+    if (stats) stats.after(box);
+}
+
 function showLearnCard(lessonId) {
     const pack = PACK_CACHE[gameState.selectedSubject];
     const unit = (pack?.units || []).find((u) => (u.lessons || []).some((l) => l.id === lessonId));
+    const teach = ((unit?.lessons || []).find((l) => l.id === lessonId) || {}).teach;
     const rows = learnRows(gameState.lessonQuestions);
-    if (!rows.length) return false;
+    if (!rows.length && !teach) return false;
     const container = document.getElementById('questionContainer');
     container.textContent = '';
     document.getElementById('progressLabel').textContent = 'Learn';
@@ -1479,9 +1571,9 @@ function showLearnCard(lessonId) {
     card.className = 'unit-intro learn-card';
     const label = document.createElement('div');
     label.className = 'unit-intro-label';
-    label.textContent = 'Learn this first';
+    label.textContent = teach ? 'Lesson' : 'Learn this first';
     card.appendChild(label);
-    if (unit?.tip) {
+    if (unit?.tip && !teach) {
         const tip = document.createElement('p');
         tip.className = 'unit-intro-tip';
         tip.textContent = unit.tip;
@@ -1490,7 +1582,8 @@ function showLearnCard(lessonId) {
     const list = document.createElement('dl');
     list.className = 'unit-intro-phrases';
     const spoken = LANGUAGE_SUBJECTS.has(gameState.selectedSubject);
-    rows.forEach(([term, meaning, sayable]) => {
+    if (teach) renderTeach(card, teach, spoken, unit && unit.tip);
+    else rows.forEach(([term, meaning, sayable]) => {
         const dt = document.createElement('dt');
         if (spoken && sayable) {
             const hear = document.createElement('button');
@@ -1511,7 +1604,7 @@ function showLearnCard(lessonId) {
     document.getElementById('feedback').className = 'feedback';
     document.getElementById('feedback').textContent = '';
     document.getElementById('skipBtn').hidden = true;
-    // checkBtn also carries a permanent checkAnswer listener; mark answered so it no-ops here.
+    // The quiz has not started yet: mark answered so a stray Skip or Check does nothing.
     gameState.answered = true;
     const button = document.getElementById('checkBtn');
     button.textContent = 'Start the quiz';
@@ -2294,6 +2387,7 @@ function nextQuestion() {
 }
 
 function showResults() {
+    renderRecap();
     document.getElementById('lessonContainer').classList.remove('active');
     document.getElementById('resultContainer').classList.add('active');
     document.getElementById('correctCount').textContent = gameState.correctAnswers;

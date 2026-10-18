@@ -1,0 +1,402 @@
+{
+ "lessons": {
+  "u1l1": {
+   "intro": "Greetings are the first thing you say in Spanish. The hello changes with the time of day, so you will learn one for morning and one for night.",
+   "points": [
+    {
+     "term": "Hola",
+     "meaning": "hello",
+     "example": "Hola, ¿cómo estás?",
+     "example_en": "Hello, how are you?",
+     "note": "The H is silent. Say OH-la."
+    },
+    {
+     "term": "Buenos días",
+     "meaning": "good morning",
+     "example": "Buenos días, señora.",
+     "example_en": "Good morning, ma'am.",
+     "note": "Days (días) is masculine and plural, so the word is buenos. Use it until about noon."
+    },
+    {
+     "term": "Buenas noches",
+     "meaning": "good night",
+     "example": "Buenas noches, hasta mañana.",
+     "example_en": "Good night, see you tomorrow.",
+     "note": "Noches is feminine, so the word is buenas."
+    },
+    {
+     "term": "Adiós",
+     "meaning": "goodbye",
+     "example": "Adiós, amigo.",
+     "example_en": "Goodbye, friend.",
+     "note": "Stress the end: ah-dee-OHS."
+    }
+   ],
+   "tip": "Buenos goes with masculine words (días), buenas goes with feminine words (noches, tardes). The word for good matches the word after it.",
+   "recap": "You can say hello and goodbye, and greet someone in the morning or at night."
+  },
+  "u1l2": {
+   "intro": "Four short words make you polite in Spanish. Learn these and people will be glad to help you.",
+   "points": [
+    {
+     "term": "Gracias",
+     "meaning": "thank you",
+     "example": "Muchas gracias.",
+     "example_en": "Thank you very much.",
+     "note": "Add muchas to say thank you very much."
+    },
+    {
+     "term": "Por favor",
+     "meaning": "please",
+     "example": "Un café, por favor.",
+     "example_en": "A coffee, please.",
+     "note": "It can go at the start or the end of a sentence."
+    },
+    {
+     "term": "De nada",
+     "meaning": "you're welcome",
+     "example": "De nada, amiga.",
+     "example_en": "You're welcome, my friend.",
+     "note": "It literally means of nothing: it was nothing."
+    },
+    {
+     "term": "Perdón",
+     "meaning": "excuse me, sorry",
+     "example": "Perdón, ¿dónde está el baño?",
+     "example_en": "Excuse me, where is the bathroom?",
+     "note": "Use it to get past someone or to say sorry."
+    }
+   ],
+   "recap": "You can thank someone, ask politely, answer a thank you, and say excuse me."
+  },
+  "u2l1": {
+   "intro": "Family words come up in almost every conversation. Spanish nouns are masculine or feminine, and family words show it clearly.",
+   "points": [
+    {
+     "term": "Madre",
+     "meaning": "mother",
+     "example": "Mi madre es doctora.",
+     "example_en": "My mother is a doctor.",
+     "note": "Mamá is what you call her to her face."
+    },
+    {
+     "term": "Padre",
+     "meaning": "father",
+     "example": "Mi padre trabaja mucho.",
+     "example_en": "My father works a lot.",
+     "note": "In the plural, padres can mean parents."
+    },
+    {
+     "term": "Hermano",
+     "meaning": "brother",
+     "example": "Tengo un hermano.",
+     "example_en": "I have one brother.",
+     "note": "A sister is hermana. Hermanos can mean brothers and sisters together."
+    },
+    {
+     "term": "Mi familia es grande",
+     "meaning": "my family is big",
+     "example": "Mi familia es grande.",
+     "example_en": "My family is big.",
+     "note": "Mi means my. It stays the same for masculine and feminine words."
+    }
+   ],
+   "tip": "Most Spanish nouns that end in -o are masculine and most that end in -a are feminine: hermano, hermana.",
+   "recap": "You can name your mother, father and brother, and say your family is big."
+  },
+  "u2l2": {
+   "intro": "To describe someone you need the person, the word es (is) and a describing word. The describing word matches the person: tall is alto for a boy and alta for a girl.",
+   "points": [
+    {
+     "term": "Amigo",
+     "meaning": "friend",
+     "example": "Él es mi amigo.",
+     "example_en": "He is my friend.",
+     "note": "A female friend is amiga."
+    },
+    {
+     "term": "Es",
+     "meaning": "is",
+     "example": "Mi amigo es alto.",
+     "example_en": "My friend is tall.",
+     "note": "Es is the he, she and it form of ser. Use it to say who or what someone is."
+    },
+    {
+     "term": "Alta",
+     "meaning": "tall (for a girl)",
+     "example": "La niña es alta.",
+     "example_en": "The girl is tall.",
+     "note": "For a boy it is alto: el niño es alto."
+    },
+    {
+     "term": "Feliz",
+     "meaning": "happy",
+     "example": "Mi hermano es feliz.",
+     "example_en": "My brother is happy.",
+     "note": "Feliz is the same for boys and girls."
+    }
+   ],
+   "tip": "Describing words that end in -o change to -a for a girl: alto, alta. Words that end in a consonant, like feliz, stay the same.",
+   "recap": "You can describe a person with es and a matching word: friend, tall, happy."
+  },
+  "u3l1": {
+   "intro": "Start with three everyday foods and the most useful sentence in a new country: I want.",
+   "points": [
+    {
+     "term": "Agua",
+     "meaning": "water",
+     "example": "Un vaso de agua, por favor.",
+     "example_en": "A glass of water, please.",
+     "note": "Say AH-gwah."
+    },
+    {
+     "term": "Pan",
+     "meaning": "bread",
+     "example": "El pan está caliente.",
+     "example_en": "The bread is warm.",
+     "note": "Pan is masculine: el pan."
+    },
+    {
+     "term": "Manzana",
+     "meaning": "apple",
+     "example": "Quiero una manzana.",
+     "example_en": "I want an apple.",
+     "note": "Manzana is feminine: la manzana."
+    },
+    {
+     "term": "Quiero",
+     "meaning": "I want",
+     "example": "Quiero agua.",
+     "example_en": "I want water.",
+     "note": "Spanish drops the word for I, because quiero already says it is me."
+    }
+   ],
+   "tip": "You almost never need yo (I). The verb ending already says who: quiero means I want.",
+   "recap": "You can name water, bread and an apple, and ask for them with quiero."
+  },
+  "u3l2": {
+   "intro": "Order, ask for the bill and say how good the food is. These are the lines you will use at every table.",
+   "points": [
+    {
+     "term": "La cuenta",
+     "meaning": "the bill",
+     "example": "La cuenta, por favor.",
+     "example_en": "The bill, please.",
+     "note": "Cuenta is feminine, so it takes la."
+    },
+    {
+     "term": "Café",
+     "meaning": "coffee",
+     "example": "Un café, por favor.",
+     "example_en": "A coffee, please.",
+     "note": "The accent shows the stress: ca-FÉ."
+    },
+    {
+     "term": "Como",
+     "meaning": "I eat",
+     "example": "Yo como pan.",
+     "example_en": "I eat bread.",
+     "note": "Como is the I form of comer. The yo is optional, it adds emphasis."
+    },
+    {
+     "term": "Delicioso",
+     "meaning": "delicious",
+     "example": "La sopa está deliciosa.",
+     "example_en": "The soup is delicious.",
+     "note": "It matches the food: delicioso for masculine, deliciosa for feminine."
+    }
+   ],
+   "recap": "You can ask for the bill, order a coffee, say what you eat and say it is delicious."
+  },
+  "u4l1": {
+   "intro": "Asking where something is gets you almost anywhere. Learn the question word dónde, a few places and one direction.",
+   "points": [
+    {
+     "term": "Dónde",
+     "meaning": "where",
+     "example": "¿Dónde está el hotel?",
+     "example_en": "Where is the hotel?",
+     "note": "The accent marks it as a question word."
+    },
+    {
+     "term": "Estación",
+     "meaning": "station",
+     "example": "¿Dónde está la estación?",
+     "example_en": "Where is the station?",
+     "note": "Words that end in -ción are feminine: la estación."
+    },
+    {
+     "term": "Aeropuerto",
+     "meaning": "airport",
+     "example": "El aeropuerto está lejos.",
+     "example_en": "The airport is far.",
+     "note": "Aeropuerto is masculine."
+    },
+    {
+     "term": "Izquierda",
+     "meaning": "left",
+     "example": "Gire a la izquierda.",
+     "example_en": "Turn left.",
+     "note": "Right is derecha."
+    },
+    {
+     "term": "Hotel",
+     "meaning": "hotel",
+     "example": "El hotel es bonito.",
+     "example_en": "The hotel is nice.",
+     "note": "Same as English, but the H is silent: oh-TEL."
+    }
+   ],
+   "recap": "You can ask where a place is, and name the station, the airport, the hotel and left."
+  },
+  "u4l2": {
+   "intro": "Numbers and prices. You will count to ten and ask what something costs.",
+   "points": [
+    {
+     "term": "Uno",
+     "meaning": "one",
+     "example": "Tengo uno.",
+     "example_en": "I have one.",
+     "note": "Before a masculine noun it shortens to un: un libro."
+    },
+    {
+     "term": "Diez",
+     "meaning": "ten",
+     "example": "Son diez euros.",
+     "example_en": "That is ten euros.",
+     "note": "Say dee-ES."
+    },
+    {
+     "term": "Cuánto cuesta",
+     "meaning": "how much does it cost",
+     "example": "¿Cuánto cuesta el pan?",
+     "example_en": "How much does the bread cost?",
+     "note": "For more than one thing, say cuánto cuestan."
+    },
+    {
+     "term": "Dinero",
+     "meaning": "money",
+     "example": "No tengo dinero.",
+     "example_en": "I have no money.",
+     "note": "Dinero is masculine: el dinero."
+    }
+   ],
+   "recap": "You can say one and ten, ask how much something costs and talk about money."
+  },
+  "u5l1": {
+   "intro": "Today, tomorrow and what time it is. These three cover most of how you talk about when.",
+   "points": [
+    {
+     "term": "Hoy",
+     "meaning": "today",
+     "example": "Hoy trabajo.",
+     "example_en": "Today I work.",
+     "note": "Say OY. The H is silent."
+    },
+    {
+     "term": "Mañana",
+     "meaning": "tomorrow",
+     "example": "Mañana voy al mercado.",
+     "example_en": "Tomorrow I am going to the market.",
+     "note": "Mañana also means morning. With la in front, la mañana is the morning."
+    },
+    {
+     "term": "Qué hora es",
+     "meaning": "what time is it",
+     "example": "Perdón, ¿qué hora es?",
+     "example_en": "Excuse me, what time is it?",
+     "note": "It literally means what hour is it."
+    }
+   ],
+   "recap": "You can say today and tomorrow, and ask what time it is."
+  },
+  "u5l2": {
+   "intro": "Talk about your day with a few verbs. In Spanish the verb ending tells you who does the action.",
+   "points": [
+    {
+     "term": "Trabajo",
+     "meaning": "I work",
+     "example": "Trabajo todos los días.",
+     "example_en": "I work every day.",
+     "note": "Trabajar is to work. Trabajo is the I form."
+    },
+    {
+     "term": "Todos los días",
+     "meaning": "every day",
+     "example": "Leo todos los días.",
+     "example_en": "I read every day."
+    },
+    {
+     "term": "Dormir",
+     "meaning": "to sleep",
+     "example": "Quiero dormir.",
+     "example_en": "I want to sleep.",
+     "note": "Dormir is the dictionary form of the verb. After quiero you use it as it is."
+    },
+    {
+     "term": "Leo",
+     "meaning": "I read",
+     "example": "Leo un libro.",
+     "example_en": "I read a book.",
+     "note": "Leer is to read. Leo is the I form."
+    },
+    {
+     "term": "Casa",
+     "meaning": "house, home",
+     "example": "Mi casa es pequeña.",
+     "example_en": "My house is small.",
+     "note": "Casa is feminine: la casa."
+    }
+   ],
+   "tip": "Spanish verbs change their ending for who does the action: trabajo (I work), trabajas (you work), trabaja (he or she works).",
+   "recap": "You can say what you do every day: I work, I read, I want to sleep."
+  }
+ },
+ "explain": {
+  "spanish_0": "Hola is the everyday hello. Gracias is thank you and Adiós is goodbye.",
+  "spanish_1": "Buenos días is the morning greeting. Buenas noches is for the night.",
+  "spanish_2": "Adiós means goodbye. Hola is hello.",
+  "spanish_3": "Hola: the H is silent, so it sounds like OH-la.",
+  "spanish_4": "Noches is feminine, so it takes buenas. Días is masculine, so it takes buenos.",
+  "spanish_5": "Gracias means thank you. Add muchas for thank you very much.",
+  "spanish_6": "Por favor means please.",
+  "spanish_7": "De nada literally means of nothing. It is the polite reply to gracias.",
+  "spanish_8": "Perdón gets someone's attention or says sorry.",
+  "spanish_9": "Por favor: say pohr fah-VOHR, with the stress on the end.",
+  "spanish_10": "Madre means mother. Padre is father.",
+  "spanish_11": "Padre means father. Madre is mother.",
+  "spanish_12": "Hermano is brother. A sister is hermana.",
+  "spanish_13": "Mi familia es grande: my (mi) family (familia) is (es) big (grande). The word order is the same as English.",
+  "spanish_14": "Madre: stress the first part, MAH-dreh.",
+  "spanish_15": "Amigo is a male friend. A female friend is amiga.",
+  "spanish_16": "La niña is a girl, so tall is alta. For a boy it would be alto.",
+  "spanish_17": "Él es mi amigo: he (él) is (es) my (mi) friend (amigo).",
+  "spanish_18": "Feliz means happy. It stays the same for boys and girls.",
+  "spanish_19": "Agua means water.",
+  "spanish_20": "Pan means bread.",
+  "spanish_21": "Manzana means apple.",
+  "spanish_22": "Agua: stress the first part, AH-gwah.",
+  "spanish_23": "Quiero agua: I want (quiero) water (agua). There is no separate word for I.",
+  "spanish_24": "La cuenta por favor: the bill (la cuenta), please (por favor).",
+  "spanish_25": "Café means coffee. The accent shows the stress is on the end.",
+  "spanish_26": "Yo como pan: I (yo) eat (como) bread (pan). The yo is optional.",
+  "spanish_27": "Delicioso means delicious. For a feminine thing like la sopa, it is deliciosa.",
+  "spanish_28": "Dónde means where. The accent shows it is a question word.",
+  "spanish_29": "Dónde está la estación: where (dónde) is (está) the station (la estación).",
+  "spanish_30": "Aeropuerto means airport.",
+  "spanish_31": "Izquierda is left. Derecha is right.",
+  "spanish_32": "Hotel is spelled like English. The H is silent, so it sounds like oh-TEL.",
+  "spanish_33": "Uno is one. Before a noun it shortens to un.",
+  "spanish_34": "Diez is ten.",
+  "spanish_35": "Cuánto cuesta: how much (cuánto) does it cost (cuesta). For more than one thing, say cuestan.",
+  "spanish_36": "Dinero means money.",
+  "spanish_37": "Hoy means today.",
+  "spanish_38": "Mañana means tomorrow. It also means morning, with la in front.",
+  "spanish_39": "Qué hora es: what (qué) hour (hora) is it (es).",
+  "spanish_40": "Hoy: the H is silent, so it sounds like OY.",
+  "spanish_41": "Trabajo todos los días: I work (trabajo) every day (todos los días).",
+  "spanish_42": "Dormir is to sleep. It is the dictionary form of the verb.",
+  "spanish_43": "Leo un libro: I read (leo) a book (un libro). Libro is masculine, so it takes un.",
+  "spanish_44": "Casa means house or home."
+ }
+}

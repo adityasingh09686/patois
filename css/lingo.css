@@ -2202,3 +2202,21 @@ body.demo .header-inner::after {
 .chess-square.dark { background: #9fb6cd; }
 .chess-square.white-piece { color: #ffffff; text-shadow: -1px 0 #18181b, 1px 0 #18181b, 0 -1px #18181b, 0 1px #18181b; }
 .chess-square.black-piece { color: #18181b; }
+
+/* Teach first: lesson intro, worked examples, tip, recap. Spacing on the 8 point grid. */
+.teach-intro { margin: 0 0 16px; font-size: 17px; line-height: 24px; color: var(--text-primary); }
+.teach-point { padding: 12px 0; border-top: 1px solid var(--border); }
+.teach-term { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 17px; line-height: 24px; }
+.teach-meaning { color: var(--text-secondary); }
+.teach-example { margin: 8px 0 0; padding-left: 40px; font-size: 15px; line-height: 20px; color: var(--text-primary); }
+.teach-example .feedback-hear { margin-left: -40px; margin-right: 8px; vertical-align: middle; }
+.teach-example-en, .teach-note { color: var(--text-secondary); }
+.teach-note { margin: 8px 0 0; font-size: 15px; line-height: 20px; }
+.teach-tip { margin: 16px 0 0; padding: 12px 16px; border-radius: 20px; background: var(--bg-primary); font-size: 15px; line-height: 20px; color: var(--text-secondary); }
+.lesson-recap { margin: 16px 0; padding: 16px; border-radius: 20px; background: var(--card-bg); border: 1px solid var(--border); text-align: left; }
+.lesson-recap ul { margin: 0; padding-left: 20px; font-size: 15px; line-height: 24px; }
+.lesson-recap p { margin: 8px 0 0; font-size: 15px; line-height: 20px; color: var(--text-secondary); }
+
+/* Quiz controls on the grid: a gap above the feedback, one full-width 48 point capsule button. */
+.feedback.show { margin-top: 16px; }
+#checkBtn { display: block; width: 100%; height: 48px; padding: 0 24px; margin-top: 16px; border-radius: 999px; font-size: 17px; }
