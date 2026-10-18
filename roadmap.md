@@ -1,5 +1,7 @@
 # lexly Roadmap
 
+> Priority tier 1 (2026-10-17): live blocker, work first. Order: live blockers, ship pushes, active features, portfolio, exploratory. See ~/Documents/Code/LOOP-HANDOFF.md.
+
 ## Shipped 2026-09-10, iPad support dropped, Sign In with Apple fixed, manual code signing
 
 Debugged why Lexly iOS couldn't rebuild for App Store submission. Discovered Sign In with Apple capability was missing from the bundle ID on Apple's side (ASC showed zero enabled capabilities). Fixed via `asc bundle-ids capabilities add` to enable it on bundle ID 5L733DK3HV. Generated new App Store distribution provisioning profiles (Lingo AppStore 20260910, widget variant). Switched both targets from automatic to manual code signing in Xcode project, updated ExportOptions.plist. Found the app also lacked the required iPad Pro 12.9" screenshot (never had one even on live 1.1.3). Rather than generate iPad screenshots for an iPhone-only app, dropped iPad support entirely (TARGETED_DEVICE_FAMILY "1,2" → "1"). Reused the rejected 1.1.5 App Store version slot, bumped to 1.1.6 (build 202609101345), submitted for review. Currently WAITING_FOR_REVIEW as a deliberate resubmission into the same 4.3(a) "Design: Spam" wave that rejected Lexly 2026-08-28. Appeal reply citing Curvely and NYC Survive successful reversals drafted but not filed pending this submission's outcome.
